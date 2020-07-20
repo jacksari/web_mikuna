@@ -1,0 +1,419 @@
+@charset "UTF-8";
+.logo {
+  background-color: #fff;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+/*------------------------------------
+1.Tipografía de sitio
+-------------------------------------*/
+html {
+  font-size: 15px; }
+
+body {
+  font-family: 'Arial';
+  color: #696969; }
+
+/*------------------------------------
+2. Estilos generales de botones
+-------------------------------------*/
+.btn {
+  border-radius: 2rem;
+  padding: 0.6rem 2rem;
+  font-weight: bold; }
+
+/*------------------------------------
+3. Estilos color principal
+-------------------------------------*/
+.bg-primary {
+  background-color: #00ad75 !important; }
+
+.text-primary {
+  color: #00ad75 !important; }
+
+.btn-primary {
+  color: #fff !important;
+  background-color: #00ad75;
+  border-color: #00ad75;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.btn-primary:hover {
+  color: #35363c !important;
+  background-color: #fff;
+  border-color: #00ad75; }
+
+.btn-primary:active {
+  color: #35363c !important;
+  background-color: #00c786 !important;
+  border-color: #00d691 !important; }
+
+.btn-primary:focus {
+  color: #35363c !important;
+  background-color: #00ad75;
+  border-color: #00e097 !important;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 173, 117, 0.5) !important;
+          box-shadow: 0 0 0 0.2rem rgba(0, 173, 117, 0.5) !important; }
+
+/*Estilos boton de navegacion*/
+.btn-primary::after {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f138";
+  font-weight: 900;
+  color: #fff;
+  position: relative;
+  left: 0.6rem;
+  top: 0.04rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.btn-primary:hover:after,
+.btn-primary:focus:after,
+.btn-primary:active:after {
+  left: 0.3rem;
+  color: #35363c; }
+
+/*Insertamos la caja blanca del botón principal*/
+.btn-primary::before {
+  content: "";
+  z-index: -1;
+  width: 0px;
+  height: 110%;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: skew(45deg, 0);
+          transform: skew(45deg, 0);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+
+.btn-primary:hover:before,
+.btn-primary:focus:before,
+.btn-primary:active:before {
+  width: 130%;
+  left: -15%; }
+
+/*------------------------------------
+4. Estilos color secundario
+-------------------------------------*/
+.bg-secondary {
+  background-color: #35363c !important; }
+
+.text-secondary {
+  color: #35363c; }
+
+/*------------------------------------
+5. Estilos para ".redes-sociales"
+-------------------------------------*/
+.redes-sociales li a i {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 0.6rem 1rem;
+  opacity: .8;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+.redes-sociales li a i:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.3) rotate(360deg);
+          transform: scale(1.3) rotate(360deg); }
+
+/*------------------------------------
+6. Estilos para "#menu-manegacion"
+-------------------------------------*/
+#menu-navegacion .navbar-toggler {
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  outline: 0; }
+
+/*Estilos boton de navegacion*/
+#menu-navegacion .boton-menu::before {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f0c9";
+  font-weight: 900;
+  font-size: 2rem;
+  color: #fff; }
+
+/*Estilos boton de navegacion*/
+#menu-navegacion .icono-cerrar::before {
+  content: "\f00d";
+  position: relative;
+  left: 0.2rem; }
+
+/*Estilos boton de navegacion*/
+.navbar-dark .navbar-nav .nav-link {
+  padding: 0.8rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  border-radius: 0.5rem; }
+
+.navbar-dark .navbar-nav .nav-link::after {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f105";
+  font-weight: 900;
+  font-size: 1rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+/*Estilos de estado hover de enlaces*/
+.navbar-dark .navbar-nav .nav-link:hover {
+  background-color: #4d4e57; }
+
+.navbar-dark .navbar-nav .nav-link:hover:after {
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg); }
+
+/*Estilos para el enlace active*/
+.navbar-dark .navbar-nav .nav-link.active {
+  background-color: #00ad75; }
+
+/*------------------------------------
+7. Estilos para animación
+-------------------------------------*/
+.swiper-slide {
+  height: 500px;
+  text-align: center;
+  color: #fff;
+  background-size: cover;
+  background-position: center center; }
+
+.swiper-slide::before {
+  content: "";
+  position: absolute;
+  background: black;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0.4; }
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.29);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: ''; }
+
+.swiper-button-prev::before,
+.swiper-button-next::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f060'; }
+
+.swiper-button-next::before {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #00ad75; }
+
+.swiper-pagination-bullet {
+  width: 1rem;
+  height: 1rem;
+  margin: 0 8px !important; }
+
+.swiper-pagination-bullet-active {
+  background: #00ad75; }
+
+/*------------------------------------
+8. Estilos para bienvenidos
+-------------------------------------*/
+.contenedor-video a {
+  background-color: rgba(255, 255, 255, 0.79);
+  width: 7rem;
+  height: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+  color: #00ad75;
+  font-size: 2.3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-clip: padding-box;
+  border: 0 solid transparent;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.contenedor-video a:hover {
+  background-color: #00ad75;
+  color: #fff;
+  border: 10px solid rgba(255, 255, 255, 0.79); }
+
+.contenedor-video img {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.contenedor-video:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1); }
+
+/*Estilos boton de close video*/
+.vbox-close {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-position: 10px center;
+  overflow: hidden;
+  font-size: 35px;
+  line-height: 1;
+  text-align: center;
+  z-index: 99;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.vbox-close:hover {
+  font-size: 50px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background-color: rgba(255, 255, 255, 0.79) !important;
+  color: #00ad75 !important; }
+
+/*------------------------------------
+9. Seccion te ayudamos
+-------------------------------------*/
+#te-ayudamos {
+  position: relative;
+  -webkit-transform: skew(0, 5deg);
+          transform: skew(0, 5deg); }
+
+#te-ayudamos::before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0; }
+
+#te-ayudamos .container {
+  -webkit-transform: skew(0, -5deg);
+          transform: skew(0, -5deg); }
+
+/*------------------------------------
+10. Estilos seccion premio
+-------------------------------------*/
+.contador-linea {
+  background-color: #00ad75;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+#premios .col-6:hover .contador-linea {
+  bottom: 1rem;
+  -webkit-transform: translateX(-50%) rotate(180deg);
+          transform: translateX(-50%) rotate(180deg);
+  background-color: black; }
+
+/*------------------------------------
+11. Estilos sección nuestra app
+-------------------------------------*/
+#nuestra-app {
+  position: relative; }
+
+#nuestra-app::before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0; }
+
+/*Estilos boton de navegacion*/
+/*------------------------------------
+
+-------------------------------------*/
+/*------------------------------------
+
+-------------------------------------*/
+/*------------------------------------
+
+-------------------------------------*/
+/*------------------------------------
+
+-------------------------------------*/
+/*------------------------------------
+
+-------------------------------------*/
+/*Empiezan el show de medias queries*/
+@media (min-width: 768px) {
+  .navbar-dark .navbar-nav .nav-link::after {
+    content: ""; }
+
+  .navbar-dark .navbar-nav .nav-link {
+    padding: 0.7rem 1.2rem;
+    border-radius: 1.5rem; }
+
+  #te-ayudamos {
+    -webkit-transform: skew(0, 3deg);
+            transform: skew(0, 3deg); }
+
+  #te-ayudamos .container {
+    -webkit-transform: skew(0, -3deg);
+            transform: skew(0, -3deg); } }
+
+/*# sourceMappingURL=estilos.css.map */
